@@ -1,0 +1,19 @@
+body {
+  background: url("../Assets/images/about-bg.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h1 {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.btn {
+  background-color: #f4476b;
+}
+
+.btn:hover {
+  background-color: #eb3b60;
+}

@@ -1,0 +1,19 @@
+body {
+  background: url("../Assets/images/bg2.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.btn {
+  background-color: #f4476b;
+  margin-top: 30px !important;
+  font-family: "Roboto Slab", serif;
+  font-weight: bold;
+  color: #fff;
+}
+
+.btn:hover {
+  background-color: #eb3b60;
+}

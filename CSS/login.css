@@ -1,0 +1,19 @@
+.icon button {
+  visibility: hidden !important;
+}
+
+body {
+  background: url("../Assets/images/login-bg.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.btn {
+  background-color: #f4476b;
+}
+
+.btn:hover {
+  background-color: #eb3b60;
+}

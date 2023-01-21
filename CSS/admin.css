@@ -1,0 +1,26 @@
+body {
+    background: url("../Assets/images/admin.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+.navbar ul a{
+  text-decoration: none;
+}
+
+.navbar-nav h2 {
+  font-family: "Ubuntu", sans-serif !important;
+}
+
+.icon button a{
+  text-decoration: none;
+  }
+
+  .main h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+    font-family: "Roboto Slab", serif;
+  }
