@@ -79,11 +79,13 @@ body::selection {
   color: #eb3b60;
 }
 
-.icon img {
-  height: 45px;
+.icon{
   margin-right: 60px;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+.icon img {
+  height: 45px;
 }
 
 .icon button {
@@ -96,7 +98,7 @@ body::selection {
   font-family: "Roboto Slab", serif;
   background: #f4476b;
   padding: 5px 20px;
-  border-radius: 50%;
+  border-radius: 4px;
 }
 
 .icon button:hover {
@@ -111,6 +113,6 @@ body::selection {
       rgba(255, 255, 255, 0.7),
       rgba(255, 255, 255, 0.3));
   border-radius: 0.5rem;
-  z-index: -1;
+  z-index: 9999;
   backdrop-filter: blur(0.2rem);
 }

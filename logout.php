@@ -3,6 +3,6 @@
 session_start();
 session_destroy();
 unset($_SESSION['id']);
-header("location: index.php");
+header("location: /cab");
 
 ?>

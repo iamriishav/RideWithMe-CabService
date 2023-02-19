@@ -27,9 +27,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         if ($verify_pass) {
             if ($user_type == 'admin') {
-                header("location: admin.php");
-            }else {
-                header("location: home.php");
+                header("location: admin");
+            } else {
+                header("location: home");
             }
         } else {
             echo "<script>
@@ -52,7 +52,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="Assets/images/logo.png" type="image/x-icon">
+    <meta name="description" content="cab booking website in which user can book a cab in few simple steps">
+    <link rel="icon" href="Assets/images/cab.png" type="image/x-icon">
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="CSS/login.css" />
     <link rel="stylesheet" type="text/css" href="CSS/utils.css">
@@ -79,14 +80,29 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                         <label for="password" class="leading-7 text-sm text-gray-600">Password</label>
                         <input type="password" id="password" name="password" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" required>
                     </div>
+                    <div class="flex items-center pl-4">
+                        <input id="toggle" type="checkbox" value="" name="bordered-checkbox" class="w-4 h-4 mb-8 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        <label for="bordered-checkbox-1" class="w-full py-4 ml-2 mb-8 text-sm font-medium text-gray-900 dark:text-gray-300">Show Password</label>
+                    </div>
                     <button class="btn text-white border-0 py-2 px-8 focus:outline-none rounded text-lg" onclick="login()">Login</button>
-                    <a class="text-xs mx-auto text-gray-500 mt-3" href="signup.php">OR SIGNUP</a>
+                    <a class="text-xs mx-auto text-gray-500 mt-3" href="signup">OR SIGNUP</a>
                 </form>
             </div>
     </div>
     </section>
     </div>
-    <script src="/JavaScript/login.js"></script>
+    <script>
+        const password = document.getElementById("password");
+        const toggle = document.getElementById("toggle");
+
+        toggle.addEventListener("click", function() {
+            if (password.type === "password") {
+                password.setAttribute('type', 'text');
+            } else {
+                password.setAttribute('type', 'password');
+            }
+        });
+    </script>
 </body>
 
 </html>

@@ -3,7 +3,7 @@
 session_start();
 
 if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
-    // header("location: index.php");
+    // header("location: index");
 }
 
 
@@ -15,7 +15,8 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="Assets/images/logo.png" type="image/x-icon">
+    <meta name="description" content="cab booking website in which user can book a cab in few simple steps">
+    <link rel="icon" href="Assets/images/cab.png" type="image/x-icon">
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/utils.css">
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
@@ -26,16 +27,16 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     <header>
         <div class="navbar">
             <ul class="nav-items">
-                <a href="home.php">
+                <a href="home">
                     <h2>Ride With Me</h2>
                 </a>
-                <li><a href="" class="active">Home</a></li>
-                <li><a href="bookcab.php">Book Cab</a></li>
-                <li><a href="about.php">About</a></li>
-                <li><a href="contact.php">Contact Us</a></li>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="bookcab">Book Cab</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="contact">Contact Us</a></li>
             </ul>
             <div class="icon">
-                <a href="profile.php"><img src="Assets/images/man.png" alt="Profile"></a>
+                <a href="profile"><img src="Assets/images/man.png" alt="Profile"></a>
             </div>
         </div>
     </header>
@@ -53,14 +54,13 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
                         operations in more than 100
                         cities.</p>
                     <div class="flex justify-center">
-                        <a href="bookcab.php"><button class="btn inline-flex border-0 py-2 px-6 focus:outline-none rounded text-lg mx-10">Book
+                        <a href="bookcab"><button class="btn inline-flex border-0 py-2 px-6 focus:outline-none rounded text-lg mx-10">Book
                                 Cab</button></a>
                     </div>
                 </div>
             </div>
         </section>
     </div>
-    <script src="/JavaScript/index.js"></script>
 </body>
 
 </html>
